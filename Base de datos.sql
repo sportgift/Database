@@ -316,7 +316,7 @@ CREATE TABLE IF NOT EXISTS `ruta_coordenadas` (
 DROP TABLE IF EXISTS `tipo_medida`;
 CREATE TABLE IF NOT EXISTS `tipo_medida` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` int(11) NOT NULL,
+  `nombre` varchar(20) NOT NULL,
   `estado` smallint(6) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Guarda los tipos de medida Km, metros, pulgadas, segundos, minutos, libras, kilos, ';
